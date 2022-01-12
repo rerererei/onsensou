@@ -1,0 +1,679 @@
+/*---------------------------------
+
+  TOPページ用CSS
+
+---------------------------------*/
+
+.top-movie {
+    position: relative;
+    width: 100%;
+}
+
+.top-steam-top {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.top-steam-under {
+    position: absolute;
+    top: 23vw;
+    width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+    .top-steam-under {
+        position: absolute;
+        top: 100vw;
+    }
+}
+
+.navbar-brand>img {
+    max-width: 75%;
+}
+
+.nav>li>a {
+    font-weight: 700;
+}
+
+.onsensou-logo {
+    position: absolute;
+    top: 0;
+    width: 40vw;
+    margin: 3vw;
+}
+
+.top-content {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    background-color: #efe7e4;
+}
+
+.top-header {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header-link li {
+    font-weight: 300;
+    color: #3D673C;
+    background-color: #fff0;
+    border: 0px;
+    font-size: 1.5vw;
+}
+
+.top-caption {
+    color: #24362B;
+}
+
+.top-caption-wt {
+    color: #fefefe94;
+}
+
+.top-description {
+    color: #5A5B3E;
+}
+
+.top-news-area {
+    width: 77%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 480px) {
+    .top-news-area {
+        width: 85%;
+    }
+}
+
+.top-news-area h2 {
+    font-size: 4vw;
+    font-weight: 100;
+    letter-spacing: 0.1em;
+}
+
+@media screen and (max-width: 480px) {
+    .top-news-area h2 {
+        font-size: 10vw;
+        font-weight: 100;
+        letter-spacing: 0.1em;
+    }
+}
+
+.news-list {
+    width: 90%;
+    margin: auto;
+}
+
+.news-img {
+    width: 100%;
+    object-fit: cover;
+    font-weight: 900;
+}
+
+.news-date {
+    text-align: left;
+    color: #fefefe94;
+    font-weight: 900;
+}
+
+.news-title {
+    text-align: left;
+    color: #fefefe94;
+    font-weight: 900;
+}
+
+@media screen and (max-width: 480px) {
+    .news-date {
+        text-align: center;
+        font-size: 3vw;
+        font-weight: 100;
+    }
+    .news-title {
+        text-align: center;
+        font-size: 3vw;
+        font-weight: 100;
+    }
+}
+
+.top-brandstory {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10vw;
+}
+
+.top-brandstory-steam-top {
+    position: absolute;
+    top: -9vw;
+    width: 100%;
+}
+
+.top-brandstory-steam-under {
+    position: absolute;
+    top: 36vw;
+}
+
+.top-brandstory .top-brandstory-content {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    padding: 13% 16% 51% 16%;
+}
+
+@media screen and (max-width: 480px) {
+    .top-brandstory .top-brandstory-content {
+        padding: 13% 8% 51% 10%;
+    }
+}
+
+.top-brandstory-text {
+    width: 105%;
+    text-align: left;
+    font-size: 12vw;
+    font-weight: 100;
+    letter-spacing: 0.1em;
+    margin-top: 10vw;
+}
+
+.about-text {
+    font-size: 1.5vw;
+    padding-right: 32vw;
+    padding-top: 4vw;
+    font-weight: 600;
+    color: #5A5B3E;
+    z-index: 10;
+}
+
+@media screen and (max-width: 480px) {
+    .about-text {
+        font-size: 1vw;
+        font-weight: 900;
+        padding-right: 11vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .top-brandstory-text {
+        font-size: 11vw;
+        margin-top: 17vw;
+    }
+}
+
+.top-brandstory-img {
+    position: relative;
+    width: 100%;
+    width: 100%;
+    text-align: left;
+    margin-left: calc(((100vw - 10%) / 2) * -1);
+    margin-right: calc(((100vw - 100%) / 2) * -1);
+}
+
+.top-brandstory-img .text-brandstory {
+    position: absolute;
+    top: 1vw;
+    right: 18vw;
+    width: 50%;
+}
+
+@media screen and (max-width: 480px) {
+    .top-brandstory-img .text-brandstory {
+        top: 4vw;
+        right: 8vw;
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .sp-lab-img {
+        position: absolute;
+        top: 52vw;
+        right: -24vw;
+        width: 91%;
+    }
+}
+
+.top-brandstory-img {
+    margin-top: 7%;
+}
+
+.bg-brandstory {
+    width: 50vw;
+    height: 24vw;
+}
+
+@media screen and (max-width: 480px) {
+    .bg-brandstory {
+        width: 63vw;
+        height: 41vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .bg-brandstory-sp {
+        margin-top: 55vw;
+        width: 63vw;
+        height: 33vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .text-brandstory-sp {
+        position: absolute;
+        top: 103vw;
+        right: 8vw;
+        width: 70%;
+    }
+}
+
+.parallax-bg {
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50%;
+}
+
+.img-bg-01 {
+    background-image: url('https://localhost/onsensou/wp-content/themes/onsensou/resources/images/BG1-About.png');
+}
+
+@media screen and (max-width: 480px) {
+    .img-bg-01 {
+        background-position-x: 0%;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    /*PCのみ適用*/
+    .top-concept {
+        background-image: url(https://localhost/onsensou/wp-content/themes/onsensou/resources/images/HS-Base.png);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 100% 115vw;
+    }
+    .top-topics {
+        background-image: url('https://localhost/onsensou/wp-content/themes/onsensou/resources/images/BG3-Topics.png');
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: 100% 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .top-concept {
+        background-image: url('https://localhost/onsensou/wp-content/themes/onsensou/resources/images/HS-Base.png');
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: 100% 115vw;
+    }
+    .top-topics {
+        background-image: url('https://localhost/onsensou/wp-content/themes/onsensou/resources/images/BG3-Topics.png');
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: 100% 100%;
+    }
+}
+
+.top-topics-text {
+    padding: 31vw 11vw 1vw 11vw;
+    font-size: 10vw;
+    font-weight: 100;
+    letter-spacing: 0.1em;
+}
+
+@media screen and (max-width: 480px) {
+    .top-topics-text {
+        padding: 51vw 11vw 1vw 11vw;
+        font-size: 15vw;
+        font-weight: 100;
+        letter-spacing: 0.1em;
+    }
+}
+
+.topics-list {
+    margin: 0 auto;
+    width: 80%;
+}
+
+@media screen and (max-width: 480px) {
+    .topics-list {
+        padding-bottom: 16vw;
+        padding-top: 16vw;
+    }
+}
+
+.topics-list>.row {
+    padding: 2vw 10vw 12vw 10vw;
+}
+
+@media screen and (max-width: 480px) {
+    .topics-list>.row {
+        padding: 0px;
+    }
+}
+
+.card {
+    border: 0px;
+}
+
+.topics-list>.row>div {
+    padding: 2.5vw;
+}
+
+.topics-list>.row>div .card-body {
+    padding: 1vw 0vw;
+}
+
+.top-concept-wave-top {
+    position: absolute;
+    top: 65vw;
+    height: 90vw;
+    width: 100%;
+}
+
+.top-concept-wave-under {
+    position: absolute;
+    top: 74vw;
+    height: 52vw;
+    width: 100%;
+}
+
+.top-concept-steam-top {
+    position: absolute;
+    top: 17vw;
+    width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+    .top-concept-steam-top {
+        top: 11%;
+    }
+}
+
+.top-concept-steam-under {
+    position: absolute;
+    top: 168vw;
+    width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+    .top-concept-steam-under {
+        position: absolute;
+        top: 40%;
+        width: 100%;
+    }
+}
+
+.consept-area {
+    padding-top: 28.4vw;
+    padding-right: 19vw;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    height: 127vw;
+    font-size: 1vw;
+    color: #5A5B3E;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 480px) {
+    .consept-area {
+        height: 113vw;
+    }
+}
+
+.consept-area a {
+    width: 23vw;
+    font-size: 1.3vw;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 480px) {
+    .consept-area a {
+        font-size: 1vw;
+        width: 40vw;
+    }
+}
+
+.consept-area img {
+    width: 40%;
+}
+
+.consept-area:last-child img {
+    margin-left: 7vw;
+}
+
+.products-area {
+    margin: 9vw auto;
+    width: 65%;
+}
+
+@media screen and (max-width: 480px) {
+    .products-area {
+        margin: 18vw auto;
+        width: 80%;
+    }
+}
+
+.products-text {
+    width: 100%;
+    text-align: left;
+    font-size: 3vw;
+}
+
+.products-title {
+    text-align: center;
+    font-size: 1.2vw;
+    color: #5A5B3E;
+    font-weight: 800;
+}
+
+.products-image {
+    border: 0;
+    background-color: #ffffff00;
+}
+
+.products-image .card-body {
+    height: 2rem;
+}
+
+.products-description {
+    width: 100%;
+    text-align: left;
+    font-size: 1.5vw;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 480px) {
+    .products-text {
+        font-size: 4vw;
+    }
+}
+
+.products-list {
+    width: 90%;
+    margin: auto;
+}
+
+.top-products-steam-under {
+    position: absolute;
+    top: 137vw;
+}
+
+@media screen and (max-width: 480px) {
+    .top-products-steam-under {
+        position: absolute;
+        top: 144vw;
+    }
+}
+
+.top-products-bg {
+    background-image: url('https://localhost/onsensou/wp-content/themes/onsensou/resources/images/20210111 ONSENSOU0386.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+}
+
+@media screen and (min-width: 480px) {
+    /*PCのみ適用*/
+    .top-products-bg {
+        margin-top: 40vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /*SPのみ適用*/
+    .top-products-bg {
+        height: 70vw;
+    }
+}
+
+.top-products-bg-area {
+    height: 70vw;
+}
+
+.top-onsensou-steam-top {
+    position: absolute;
+    top: 191vw;
+}
+
+.top-onsensou-steam-top-sp {
+    position: absolute;
+    top: 230vw;
+}
+
+.products-list {
+    margin-top: 4vw;
+}
+
+.top-shop {
+    position: relative;
+}
+
+.top-shop-bg {
+    position: absolute;
+    top: 0;
+    height: 53vw;
+    width: 100%;
+}
+
+.top-shop-wave-top {
+    position: absolute;
+    top: 0;
+    height: 52vw;
+    width: 100%;
+}
+
+.top-shop-wave-under {
+    position: absolute;
+    top: 21vw;
+    width: 100%;
+    height: 32vw;
+}
+
+.top-shop-steam-top {
+    position: absolute;
+    top: -16vw;
+    width: 100%;
+    height: 32vw;
+}
+
+.top-shop-steam-under {
+    position: absolute;
+    top: 44vw;
+    width: 100%;
+    height: 17vw;
+}
+
+.top-shop-list {
+    position: absolute;
+    z-index: 1;
+    top: 15vw;
+    left: 33vw;
+    width: 33vw;
+}
+
+.top-shop-text {
+    position: absolute;
+    z-index: 1;
+    top: 7vw;
+    right: 18vw;
+    font-size: 4vw;
+    font-weight: 100;
+    letter-spacing: 0.1em;
+}
+
+
+/*1.フェードインアニメーションの指定*/
+
+.scrollanime {
+    opacity: 0;
+}
+
+
+/*一瞬表示されるのを防ぐ*/
+
+.fadeInDown {
+    animation-name: fadeInDown;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+/*2.上下の動きを指定*/
+
+.updown {
+    transform: translateY(-200px);
+}
+
+.downup {
+    transform: translateY(200px);
+}
+
+
+/*3.左右の動きを指定*/
+
+
+/*横スクロールバーを隠す*/
+
+.sect02 {
+    overflow: hidden;
+}
+
+.slide-right {
+    transform: translateX(200px);
+}
+
+.slide-left {
+    transform: translateX(-200px);
+}
+
+.product-list-btn {
+    width: 45%;
+    margin: 0 auto;
+    padding-top: 52vw;
+    text-align: center;
+}
+
+.product-list-btn a {
+    color: white !important;
+    border: solid;
+    border-width: thin;
+    padding: 4px 13px;
+    font-size: 5vw;
+}

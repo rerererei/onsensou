@@ -1,0 +1,496 @@
+	@charset "utf-8";
+	/*
+theme Name: ONSENSOU THEME
+Author: Rei
+Description: onsensou theme 2021 
+version： 1.0.0
+*/
+	/*cssのリセット*/
+	
+	html,
+	body,
+	div,
+	span,
+	object,
+	iframe,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	p,
+	blockquote,
+	pre,
+	abbr,
+	address,
+	cite,
+	code,
+	del,
+	dfn,
+	em,
+	img,
+	ins,
+	kbd,
+	q,
+	samp,
+	small,
+	strong,
+	sub,
+	sup,
+	var,
+	b,
+	i,
+	dl,
+	dt,
+	dd,
+	ol,
+	ul,
+	li,
+	fieldset,
+	form,
+	label,
+	legend,
+	table,
+	caption,
+	tbody,
+	tfoot,
+	thead,
+	tr,
+	th,
+	td,
+	article,
+	aside,
+	canvas,
+	details,
+	figcaption,
+	figure,
+	footer,
+	header,
+	hgroup,
+	menu,
+	nav,
+	section,
+	summary,
+	time,
+	mark,
+	audio,
+	video {
+	    font-size: 100%;
+	    margin: 0;
+	    padding: 0;
+	    vertical-align: baseline;
+	    border: 0;
+	    outline: 0;
+	    background: transparent;
+	}
+	
+	body {
+	    line-height: 1;
+	}
+	
+	article,
+	aside,
+	details,
+	figcaption,
+	figure,
+	footer,
+	header,
+	hgroup,
+	menu,
+	nav,
+	section {
+	    display: block;
+	}
+	
+	nav ul {
+	    list-style: none;
+	}
+	
+	blockquote,
+	q {
+	    quotes: none;
+	}
+	
+	blockquote:before,
+	blockquote:after,
+	q:before,
+	q:after {
+	    content: '';
+	    content: none;
+	}
+	
+	a {
+	    display: block;
+	    font-size: 100%;
+	    margin: 0;
+	    padding: 0;
+	    background: transparent;
+	    text-decoration: none !important;
+	    color: inherit !important;
+	}
+	
+	a:visited {
+	    color: inherit;
+	}
+	
+	a:hover {
+	    text-decoration: none;
+	}
+	
+	ins {
+	    text-decoration: none;
+	    color: #000;
+	    background-color: #ff9;
+	}
+	
+	mark {
+	    font-weight: bold;
+	    font-style: italic;
+	    color: #000;
+	    background-color: #ff9;
+	}
+	
+	del {
+	    text-decoration: line-through;
+	}
+	
+	abbr[title],
+	dfn[title] {
+	    cursor: help;
+	    border-bottom: 1px dotted;
+	}
+	
+	table {
+	    border-spacing: 0;
+	    border-collapse: collapse;
+	}
+	
+	hr {
+	    display: block;
+	    height: 1px;
+	    margin: 1em 0;
+	    padding: 0;
+	    border: 0;
+	    border-top: 1px solid #ccc;
+	}
+	
+	ul,
+	li {
+	    padding-left: 0;
+	    margin-top: 0;
+	    margin-bottom: 0;
+	    list-style: none;
+	}
+	/*サイト全体の基準となるCSSを記述*/
+	
+	body {
+	    scroll-behavior: smooth;
+	    overflow-x: hidden;
+	}
+	
+	body {
+	    /*フォントの指定*/
+	    font-family: 'Zen Kaku Gothic Antique', 'Spartan', 'Noto Sans JP', 'メイリオ', 'Meiryo', 'ヒラギノ角ゴ Pro', 'Hiragino Kaku Gothic Pro', Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif !important;
+	    /*行間の指定*/
+	    line-height: 1.4;
+	    margin: 0;
+	    padding: 0;
+	    /*サイトのデフォルトとなる文字の色を指定*/
+	    color: #333;
+	    position: relative;
+	    padding-bottom: 60px;
+	    box-sizing: border-box;
+	    min-height: 100vh;
+	}
+	/*見出しを全て太字で表示 + 文字色を黒に*/
+	
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+	    font-weight: bold;
+	    color: #000;
+	}
+	
+	img {
+	    max-width: 100%;
+	    height: auto;
+	}
+	
+	.contents {}
+	
+	html {
+	    scroll-behavior: smooth;
+	}
+	
+	#sidebar {
+	    background-color: #aefffc;
+	}
+	/*------------------------*/
+	/*コンテンツのサイズ指定*/
+	
+	.wrapper {
+	    min-height: 100vh;
+	    position: relative;
+	    padding-bottom: 190px;
+	    box-sizing: border-box;
+	}
+	
+	@media screen and (max-width: 480px) {
+	    .wrapper {
+	        min-height: 85vh;
+	        padding-bottom: 130px;
+	    }
+	}
+	
+	.header-inner,
+	.container,
+	.footer-inner {
+	    box-sizing: border-box;
+	    margin-right: auto;
+	    margin-left: auto;
+	}
+	
+	.header-inner {
+	    width: 100%;
+	    margin: 0 auto;
+	}
+	
+	.header-img {
+	    width: 70%;
+	}
+	
+	.navbar-inner {
+	    width: 80%;
+	    margin: auto;
+	    padding-top: 2.0rem;
+	}
+	
+	.nav-item {
+	    font-size: 1.2vw;
+	    font-weight: 400;
+	    color: #24362B !important;
+	}
+	
+	.nav-text .nav-link {
+	    font-weight: 800;
+	}
+	
+	.nav-link.active {
+	    border-bottom: 2px solid #3D673C;
+	    text-decoration: none;
+	}
+	
+	.top-image-sp {
+	    position: fixed;
+	    padding: 4px;
+	    width: 100%;
+	    background-color: #FAFAF3;
+	}
+	
+	.top-image-sp img {
+	    width: 60%
+	}
+	/*ハンバーガーメニュー*/
+	
+	.menu-btn {
+	    position: fixed;
+	    top: -5px;
+	    right: 5px;
+	    display: flex;
+	    height: 60px;
+	    width: 60px;
+	    justify-content: center;
+	    align-items: center;
+	    z-index: 90;
+	}
+	
+	.menu-btn span,
+	.menu-btn span:before,
+	.menu-btn span:after {
+	    content: '';
+	    display: block;
+	    height: 3px;
+	    width: 25px;
+	    border-radius: 3px;
+	    background-color: #1d1d1d;
+	    position: absolute;
+	}
+	
+	.menu-btn span:before {
+	    bottom: 8px;
+	}
+	
+	.menu-btn span:after {
+	    top: 8px;
+	}
+	
+	#menu-btn-check:checked~.menu-btn span {
+	    background-color: rgba(255, 255, 255, 0);
+	    /*メニューオープン時は真ん中の線を透明にする*/
+	}
+	
+	#menu-btn-check:checked~.menu-btn span::before {
+	    bottom: 0;
+	    transform: rotate(45deg);
+	}
+	
+	#menu-btn-check:checked~.menu-btn span::after {
+	    top: 0;
+	    transform: rotate(-45deg);
+	}
+	
+	#menu-btn-check {
+	    display: none;
+	}
+	
+	.menu-content ul {
+	    padding: 70px 10px 0;
+	}
+	
+	.menu-content ul li {
+	    border-bottom: solid 1px #ffffff;
+	    list-style: none;
+	}
+	
+	.menu-content ul li a {
+	    display: block;
+	    width: 100%;
+	    font-size: 15px;
+	    box-sizing: border-box;
+	    color: #ffffff !important;
+	    text-decoration: none;
+	    padding: 9px 15px 10px 0;
+	    position: relative;
+	}
+	
+	.menu-content ul li a::before {
+	    content: "";
+	    width: 7px;
+	    height: 7px;
+	    border-top: solid 2px #ffffff;
+	    border-right: solid 2px #ffffff;
+	    transform: rotate(45deg);
+	    position: absolute;
+	    right: 11px;
+	    top: 16px;
+	}
+	
+	.menu-content {
+	    width: 100%;
+	    height: 100%;
+	    position: fixed;
+	    top: 0;
+	    left: 100%;
+	    /*leftの値を変更してメニューを画面外へ*/
+	    z-index: 80;
+	    background-color: #9bae88f5;
+	    transition: all 1.0s;
+	    /*アニメーション設定*/
+	}
+	
+	#menu-btn-check:checked~.menu-content {
+	    left: 0;
+	    /*メニューを画面内へ*/
+	}
+	
+	.top-footer-wrap {
+	    background-color: #D9DAD9;
+	}
+	
+	.top-footer-wrap .sns-link {
+	    color: #24362B;
+	}
+	
+	.other-footer-wrap .sns-link {
+	    color: #D9DAD9;
+	}
+	
+	.footer-logo-link {
+	    width: 50%;
+	}
+	
+	.other-footer-wrap {
+	    position: absolute;
+	    bottom: -140px;
+	    width: 100%;
+	    background-color: #24362B;
+	}
+	
+	.top-footer {
+	    width: 70%;
+	    padding: 1px;
+	    margin: auto;
+	}
+	
+	.top-footer>.row {
+	    margin: 30px 0px;
+	}
+	
+	.sns-link {
+	    text-align: right;
+	    font-weight: 800;
+	}
+	
+	@media screen and (max-width: 480px) {
+	    .sns-link {
+	        text-align: center;
+	        margin: 7vw auto 10vw auto;
+	    }
+	}
+	
+	@media screen and (max-width: 480px) {
+	    .top-footer {
+	        margin-top: 15vw;
+	        font-size: 3.5vw;
+	        font-weight: 800;
+	        width: 70%;
+	        padding: 1px;
+	        margin: auto;
+	    }
+	}
+	
+	.footer-logo {
+	    padding-top: 3.5vw;
+	}
+	
+	@media screen and (max-width: 480px) {
+	    .footer-img {
+	        margin-top: 5vw;
+	    }
+	    .footer-img a {
+	        text-align: center;
+	        margin: 0 auto;
+	    }
+	}
+	
+	@media screen and (max-width: 480px) {
+	    .footer-logo {
+	        width: 70%;
+	        padding-top: 2vw;
+	    }
+	    .sns-head {
+	        margin-top: 7vw;
+	    }
+	}
+	
+	.footer-email {
+	    width: 12vw;
+	}
+	
+	.footer-instagram {
+	    width: 11vw;
+	    margin-left: 1vw;
+	}
+	
+	.bg-green {
+	    background-color: #FAFAF3;
+	    color: #24362B;
+	}
+	
+	.sns-instagram img {
+	    width: 0.5em;
+	}

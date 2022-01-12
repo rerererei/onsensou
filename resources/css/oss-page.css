@@ -1,0 +1,435 @@
+    /*---------------------------------
+
+  固定ページ用CSS
+
+---------------------------------*/
+    
+    body {
+        background-color: #FAFAF3;
+        color: #24362B;
+    }
+    
+    .products-page-top {
+        height: 75vw;
+        padding-top: 0vw;
+    }
+    
+    .page-top {
+        padding-top: 10vw;
+    }
+    
+    @media screen and (max-width: 480px) {
+        /*SPのみ適用*/
+        .page-top {
+            padding-top: 20vw;
+        }
+    }
+    
+    .product-steam-top {
+        position: absolute;
+        top: 0vw;
+        width: 100%;
+        z-index: -2;
+    }
+    
+    .product-top-bg {
+        position: absolute;
+        top: 5vw;
+        width: 100%;
+        z-index: -10;
+    }
+    
+    .page-top>h1 {
+        text-align: center;
+        font-size: 5vw;
+        margin-bottom: 10vw;
+    }
+    
+    @media screen and (max-width: 480px) {
+        .page-top>h1 {
+            text-align: center;
+            font-size: 10vw;
+            padding-bottom: 2vw;
+        }
+    }
+    
+    h1.products-h1 {
+        text-align: center;
+        font-size: 5vw;
+        padding-top: 10vw;
+    }
+    
+    @media screen and (max-width: 480px) {
+        h1.products-h1 {
+            padding-top: 20vw;
+            font-size: 10vw;
+        }
+    }
+    
+    .page-contents {
+        width: 80%;
+        margin: 0 auto 7vw auto;
+    }
+    
+    .topics-contents {
+        width: 70%;
+        margin: 2vw auto 7vw auto;
+    }
+    
+    .page-contents>h2 {
+        width: 75%;
+        margin: 9vw auto;
+        color: #5A5B3E;
+        font-weight: 800;
+    }
+    
+    @media screen and (max-width: 480px) {
+        .page-contents>h2 {
+            width: 90%;
+            margin: 0 auto;
+            margin-top: 20vw;
+            margin-bottom: 5vw;
+            font-size: 5vw;
+            text-align: center;
+        }
+    }
+    
+    h2.anchor {
+        display: block;
+        margin-top: -100px;
+        padding-top: 180px;
+    }
+    
+    .product-list {
+        margin-bottom: 14vw;
+    }
+    
+    .product-title {
+        margin-bottom: 3rem;
+        font-size: 1vw;
+        font-weight: 800;
+        color: #9CB08A;
+        text-align: center;
+    }
+    
+    @media screen and (max-width: 480px) {
+        .product-title {
+            margin: 0.5rem 0 1rem 0;
+            font-size: 1vw;
+            font-weight: 800;
+            color: #5A5B3E;
+            text-align: center;
+        }
+    }
+    
+    .pagination {
+        margin: 40px 0 0;
+    }
+    
+    .pnavi {
+        margin-top: 3vw;
+        text-align: center;
+    }
+    
+    .nav-links {
+        display: flex;
+    }
+    
+    .topics-contents .page-numbers {
+        display: inline-block;
+        padding: 10px;
+        padding-bottom: 0px;
+        color: #333;
+        border-bottom: 2px solid #3D673C;
+    }
+    
+    .topics-contents .current {
+        font-weight: 800;
+        padding: 10px;
+        padding-bottom: 0px;
+        border-bottom: 0px;
+    }
+    
+    .topics-contents .prev,
+    .topics-contents .next {
+        background: transparent;
+        border-bottom: 0px;
+    }
+    
+    .topics-contents .dots {
+        background: transparent;
+    }
+    
+    @media screen and (max-width: 480px) {
+        .topics-contents .page-numbers {
+            font-size: 1vw;
+        }
+        .topics-contents .current {
+            font-size: 1vw;
+        }
+        .topics-contents .prev,
+        .topics-contents .next {
+            font-size: 1vw;
+        }
+        .topics-contents .dots {
+            font-size: 1vw;
+        }
+    }
+    
+    .faq-content {
+        width: 50%;
+        margin: 5vw auto 10vw auto;
+        font-size: 1.2vw;
+        font-weight: 900;
+    }
+    
+    @media screen and (max-width: 480px) {
+        .faq-content {
+            width: 90%;
+        }
+    }
+    
+    .faq-content p {
+        margin-bottom: 5rem;
+    }
+    
+    @media screen and (max-width: 480px) {
+        .faq-content p {
+            margin-bottom: 2rem;
+        }
+    }
+    
+    .news-content {
+        width: 50%;
+        margin: 5vw auto 10vw auto;
+        font-size: 1vw;
+        font-weight: 900;
+    }
+    
+    @media screen and (max-width: 480px) {
+        .news-content {
+            width: 80%;
+        }
+    }
+    
+    .news-content p {
+        font-size: 1.5vw;
+        margin-bottom: 3rem;
+    }
+    
+    .shop-content {
+        text-align: center;
+        width: 70%;
+        margin: 5vw auto 10vw auto;
+        font-size: 1vw;
+        font-weight: 700;
+    }
+    
+    @media screen and (max-width: 480px) {
+        .shop-content {
+            width: 100%;
+        }
+    }
+    
+    .shop-content div {
+        margin-bottom: 1rem;
+        font-weight: 900;
+    }
+    
+    .shop-content span {
+        cursor: pointer;
+        font-size: 2vw;
+        font-weight: 900;
+    }
+    
+    .shop-list {
+        width: 100%;
+        display: none;
+    }
+    
+    .shop-list table {
+        width: 100%;
+    }
+    
+    .shop-list tr td {
+        padding: 10px;
+    }
+    
+    @media screen and (min-width: 480px) {
+        /*PCのみ適用*/
+        .topics-card {
+            padding: 4vw;
+        }
+    }
+    
+    .about-contents {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    @media screen and (max-width: 480px) {
+        .about-contents {
+            width: 90%;
+            padding-bottom: 30vw;
+        }
+    }
+    
+    .about-top {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    @media screen and (max-width: 480px) {
+        .about-top {
+            width: 100%;
+        }
+    }
+    
+    .about-top .about-top-text {
+        margin-top: 3vw;
+        font-weight: 800;
+    }
+    
+    .sentense-heading {
+        margin-top: 4vw !important;
+        font-size: 2vw !important;
+        font-weight: 900;
+        margin-bottom: 2vw !important;
+        color: #9CB08A !important;
+    }
+    
+    @media screen and (max-width: 480px) {
+        .sentense-heading {
+            margin-top: 4vw !important;
+            font-size: 2vw !important;
+            font-weight: 900;
+            margin-bottom: 2vw !important;
+            color: #9CB08A !important;
+        }
+    }
+    
+    .about-top .about-top-text>p {
+        font-size: 1.3vw;
+        margin-bottom: 0.3rem;
+        color: #5A5B3E
+    }
+    
+    .about-second-content {
+        margin: 10vw auto 0vw 11vw;
+        width: 75%;
+    }
+    
+    @media screen and (max-width: 480px) {
+        .about-second-content {
+            margin: 10vw 0vw 0vw 0vw;
+            width: 100%;
+        }
+    }
+    
+    .about-second-content img {
+        float: left;
+        width: 12vw;
+    }
+    
+    @media screen and (max-width: 480px) {
+        .about-second-content img {
+            width: 20vw;
+            margin: 4vw;
+        }
+    }
+    
+    .about-second-content .about-second-box {
+        padding-left: 14vw;
+        margin: 8vw auto;
+    }
+    
+    @media screen and (max-width: 480px) {
+        .about-second-content .about-second-box {
+            padding-left: 26vw;
+            margin: 0vw auto;
+        }
+    }
+    
+    .about-second-content>div {
+        margin-bottom: 5vw;
+    }
+    
+    @media screen and (max-width: 480px) {
+        .about-second-content>div {
+            margin: 8vw 0 5vw 0;
+            height: 7rem;
+        }
+    }
+    
+    .about-sentence {
+        font-size: 1.8vw;
+        font-weight: 800;
+        color: #9CAF89;
+    }
+    
+    .about-second-text {
+        font-size: 1.3vw;
+        margin-bottom: 0.3rem;
+        font-weight: 800;
+        color: #5A5B3E;
+    }
+    
+    .about-third-content {
+        margin: 12vw auto 0vw auto;
+        width: 85%;
+        height: 35vw;
+        color: #5A5B3E;
+    }
+    
+    @media screen and (max-width: 480px) {
+        .about-third-content {
+            width: 100%;
+            height: 60vw;
+            color: #5A5B3E;
+        }
+    }
+    
+    .about-third-content img {
+        float: left;
+        width: 29%;
+    }
+    
+    @media screen and (max-width: 480px) {
+        .about-third-content img {
+            float: left;
+            width: 45%;
+        }
+    }
+    
+    .about-third-content .about-third-box {
+        padding: 1vw;
+        padding-left: 22vw;
+        margin: 0vw auto;
+    }
+    
+    @media screen and (max-width: 480px) {
+        .about-third-content .about-third-box {
+            padding: 0vw;
+            height: 60vw;
+            padding-left: 43vw;
+        }
+    }
+    
+    .about-third-text {
+        font-size: 1.3vw;
+        margin-bottom: 0.3rem;
+        font-weight: 800;
+    }
+    
+    .about-text-list {
+        margin: 3vw auto;
+        width: 85%;
+    }
+    
+    .products-sub-title {
+        text-align: left;
+        font-size: 0.8em;
+        padding-left: 4vw;
+        color: #5A5B3E;
+    }
